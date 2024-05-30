@@ -2,6 +2,8 @@
 /public/hot
 /vendor
 .env
+.env.example
+.env.standa
 .env.backup
 .phpunit.result.cache
 docker-compose.override.yml
