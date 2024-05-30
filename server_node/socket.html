@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Get Data</title>
+    <script src="https://cdn.socket.io/4.5.0/socket.io.min.js" integrity="sha384-7EyYLQZgWBi67fBtVxw60/OWl1kjsfrPFcaU0pp0nAh+i8FD068QogUvg85Ewy1k" crossorigin="anonymous"></script>
+    <!-- <script src="http://localhost:3000/socket.io/socket.io.js"></script>  -->
+</head>
+
+<body>
+    <div id="results"> This text will change </div>
+    <div id="date">sample another temp text</div>
+    <script>
+        // client code here
+        // let io = require("socket.io-client");
+        var socket = io.connect('https://main.doapp.vn:6441');
+        socket.on('badges:badges_user:6', function (message) {
+            console.log(message)
+            document.getElementById("date").innerHTML = "My new text!";
+        });
+
+        // var socket = io.connect('localhost:3000');
+        // socket.on('send-msg', function(message) {
+        // console.log(message)
+        //   document.getElementById("date").innerHTML = "My new text!";
+        // });
+        socket.on('welcome', function (data) {
+            document.getElementById("results").innerHTML = data.message;
+        });
+    </script>
+</body>
+
+</html>

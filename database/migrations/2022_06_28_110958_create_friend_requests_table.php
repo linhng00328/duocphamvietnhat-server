@@ -1,0 +1,43 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateFriendRequestsTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('friend_requests', function (Blueprint $table) {
+            $table->id();
+            
+            $table->unsignedBigInteger('store_id')->unsigned()->index();
+            $table->foreign('store_id')->references('id')->on('stores')->onDelete('cascade');
+
+            $table->unsignedBigInteger('customer_id')->unsigned()->index()->nullable();
+            $table->foreign('customer_id')->references('id')->on('customers')->onDelete('cascade')->nullable();
+
+            $table->unsignedBigInteger('to_customer_id')->unsigned()->index()->nullable();
+            $table->foreign('to_customer_id')->references('id')->on('customers')->onDelete('cascade')->nullable();
+
+            $table->string("content")->nullable();
+
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('friend_requests');
+    }
+}

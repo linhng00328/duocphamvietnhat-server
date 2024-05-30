@@ -1,0 +1,24 @@
+{
+    "name": "ajcastro/searchable",
+    "description": "Full-text search and reusable queries in laravel.",
+    "keywords": ["laravel", "laravel-package", "query", "query-builder", "full-text-search", "eloquent-search", "grid"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Arjon Jason Castro",
+            "email": "ajcastro29@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AjCastro\\Searchable\\": "src"
+        }
+    },
+    "minimum-stability": "dev",
+    "require-dev": {
+        "orchestra/testbench": "~3.0"
+    }
+}

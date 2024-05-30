@@ -1,0 +1,138 @@
+[
+  {
+    "_id": "63a61bc0-6da7-4a8f-8dbd-aaf6f5a961f1",
+    "colId": "7ebb27cc-8d9c-497b-a30f-54db250d3754",
+    "containerId": "",
+    "name": "Send noti api",
+    "url": "http://localhost:8000/api/admin/test",
+    "method": "GET",
+    "sortNum": 10000,
+    "created": "2023-01-04T01:49:23.124Z",
+    "modified": "2023-01-06T02:04:37.422Z",
+    "headers": [
+      {
+        "name": "User-Agent",
+        "value": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "name": "Authorization",
+        "value": "key=AAAA1HVQY2A:APA91bERP-840q0LZ0_qCWy8IhSk2k_BkLhC9xeoBxjo4B4ZDwXep7L_J8e8SK6b6B1_fkWefIFppW7uZewVrkTbFaxWJNipW6dM6YTyqOriZqhlptnkBBToGbCGiMh8iodd0xsXkADt"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"to\": \"e5YOPPJvZkTwrMc1atMF2e:APA91bF8CE7vk7wTvr4mBAU\",\n     \"data\":{\n        \"body\":\"Test Notification !!!\",\n        \"title\":\"Test Title !!!\"\n    }\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "2b1a4c5c-81e6-47ff-87cd-b9aede1e09a9",
+    "colId": "7ebb27cc-8d9c-497b-a30f-54db250d3754",
+    "containerId": "",
+    "name": "Danh sách tỉnh viettel",
+    "url": "https://partner.viettelpost.vn/v2/categories/listProvinceById?provinceId=",
+    "method": "GET",
+    "sortNum": 20000,
+    "created": "2023-01-06T01:50:02.074Z",
+    "modified": "2023-01-06T01:58:39.835Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "provinceId",
+        "value": "",
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "b130f5ae-04e7-43d2-b190-59289ed2519d",
+    "colId": "7ebb27cc-8d9c-497b-a30f-54db250d3754",
+    "containerId": "",
+    "name": "Danh sách huyện vietel",
+    "url": "https://partner.viettelpost.vn/v2/categories/listDistrict?provinceId=63",
+    "method": "GET",
+    "sortNum": 30000,
+    "created": "2023-01-06T01:52:22.996Z",
+    "modified": "2023-01-06T01:52:49.310Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "provinceId",
+        "value": "63",
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "fab30fc7-3943-4ebd-a1ed-e4f868c0a471",
+    "colId": "7ebb27cc-8d9c-497b-a30f-54db250d3754",
+    "containerId": "",
+    "name": "Danh sách xã viettel",
+    "url": "https://partner.viettelpost.vn/v2/categories/listWards?districtId=705",
+    "method": "GET",
+    "sortNum": 40000,
+    "created": "2023-01-06T01:53:42.721Z",
+    "modified": "2023-01-06T01:54:11.562Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "districtId",
+        "value": "705",
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "3ddf76ea-214c-41c3-b86b-d03d0b15cf35",
+    "colId": "7ebb27cc-8d9c-497b-a30f-54db250d3754",
+    "containerId": "",
+    "name": "Lấy id tỉnh của viettel",
+    "url": "",
+    "method": "GET",
+    "sortNum": 30000,
+    "created": "2023-01-06T02:00:41.186Z",
+    "modified": "2023-01-06T02:00:41.186Z",
+    "headers": []
+  },
+  {
+    "_id": "73edb8ea-08f6-4396-b2e0-0f9fee65c296",
+    "colId": "7ebb27cc-8d9c-497b-a30f-54db250d3754",
+    "containerId": "",
+    "name": "Send noti api Copy",
+    "url": "http://localhost:8000/api/store/zalo",
+    "method": "POST",
+    "sortNum": 15000,
+    "created": "2023-02-21T04:38:49.480Z",
+    "modified": "2023-02-21T04:39:44.580Z",
+    "headers": [
+      {
+        "name": "User-Agent",
+        "value": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "name": "Authorization",
+        "value": "key=AAAA1HVQY2A:APA91bERP-840q0LZ0_qCWy8IhSk2k_BkLhC9xeoBxjo4B4ZDwXep7L_J8e8SK6b6B1_fkWefIFppW7uZewVrkTbFaxWJNipW6dM6YTyqOriZqhlptnkBBToGbCGiMh8iodd0xsXkADt"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"to\": \"e5YOPPJvZkTwrMc1atMF2e:APA91bF8CE7vk7wTvr4mBAU\",\n     \"data\":{\n        \"body\":\"Test Notification !!!\",\n        \"title\":\"Test Title !!!\"\n    }\n}",
+      "form": []
+    },
+    "tests": []
+  }
+]
