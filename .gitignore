@@ -5,6 +5,7 @@
 .env.example
 .env.standa
 .env.backup
+.storage
 .phpunit.result.cache
 docker-compose.override.yml
 Homestead.json
